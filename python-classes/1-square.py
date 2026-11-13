@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+"""Defines a class square."""
+
+class Square:
+    """Represent a square."""
+
+    def __init__(self, size):
+        
+        self._size = size
