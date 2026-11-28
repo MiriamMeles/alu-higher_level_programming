@@ -2,7 +2,16 @@
 """class_to_json"""
 
 
-def class_to_json(obj):
-    """class_to_json"""
+class Student:
+    """Contains student data
+    """
 
-    return obj.__dict__
+    def __init__(self, first_name, last_name, age):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def to_json(self):
+        """class_to_json"""
+
+        return self.__dict__
